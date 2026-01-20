@@ -58,7 +58,7 @@ function Profile() {
           <img
             src={
               user.profileImage
-                ? `http://localhost:5000/uploads/${user.profileImage}`
+                ? `https://workout-backend-vert.vercel.app/uploads/${user.profileImage}`
                 : "https://via.placeholder.com/150"
             }
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-green-500"

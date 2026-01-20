@@ -232,7 +232,7 @@ function Home() {
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 300) {
-                setShowBMISection(true);
+                // setShowBMISection(true);
             }
         };
         window.addEventListener("scroll", handleScroll);
@@ -484,7 +484,7 @@ function Home() {
                                             Day {w.day}
                                         </div>
                                         <img
-                                            src={`http://localhost:5000/uploads/${w.image}`}
+                                            src={`https://workout-backend-vert.vercel.app/uploads/${w.image}`}
                                             className="w-full h-48 object-cover"
                                             alt={`Day ${w.day} progress`}
                                         />
