@@ -148,14 +148,16 @@ function Register() {
             <label className="block text-sm text-gray-300 mb-2">
               Profile Image
             </label>
+            <div className="flex">
             <input
               type="file"
               accept="image/*"
-              className="text-sm text-gray-300"
+              className="text-sm text-gray-300 w-[45%]"
               onChange={(e) => setProfileImage(e.target.files[0])}
               required
             />
-            should be less than 1MB
+            <p className="text-[#ababab] text-sm w-[50%] flex center items-center justify-center">(should be less than 1MB)</p>
+            </div>
           </div>
 
           {/* BUTTON */}
