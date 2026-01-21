@@ -155,6 +155,7 @@ function Register() {
               onChange={(e) => setProfileImage(e.target.files[0])}
               required
             />
+            should be less than 1MB
           </div>
 
           {/* BUTTON */}
