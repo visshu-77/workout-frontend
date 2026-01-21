@@ -55,6 +55,8 @@ function Profile() {
           className="bg-slate-800 rounded-2xl shadow-xl max-w-md w-full p-8"
         >
           {/* IMAGE */}
+        
+        { /*
           <img
             src={
               user.profileImage
@@ -62,7 +64,18 @@ function Profile() {
                 : "https://via.placeholder.com/150"
             }
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-green-500"
+          />  */}
+
+          <img
+            src={
+              user.profileImage
+                ? user.profileImage
+                : "https://via.placeholder.com/150"
+            }
+            className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-green-500"
+            alt="Profile"
           />
+
 
           {edit && (
             <input

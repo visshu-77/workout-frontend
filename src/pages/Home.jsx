@@ -484,7 +484,7 @@ function Home() {
                                             Day {w.day}
                                         </div>
                                         <img
-                                            src={`https://workout-backend-vert.vercel.app/uploads/${w.image}`}
+                                            src={w.image}
                                             className="w-full h-48 object-cover"
                                             alt={`Day ${w.day} progress`}
                                         />
